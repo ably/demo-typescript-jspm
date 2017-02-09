@@ -1,0 +1,16 @@
+<html>
+<head>
+  <title>JSPM Nativescript Sample</title>
+  <script src="jspm_packages/system.src.js"></script>
+  <script src="jspm.browser.js"></script>
+  <script src="jspm.config.js"></script>
+</head>
+<body>
+  <div id="content"></div>
+  <script>
+    System.import("app/example.ts").then(function(app) {
+      app.connect();
+    });
+  </script>
+</body>
+</html>
