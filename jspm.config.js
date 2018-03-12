@@ -14,7 +14,7 @@ SystemJS.config({
     "tsconfig": true,
     "typings": {
       "ably": "ably.d.ts",
-      "github:ably/ably-js": "ably.d.ts"
+      "npm:ably@1.0.13": "ably.d.ts"
     }
   },
   packages: {
@@ -32,7 +32,7 @@ SystemJS.config({
     "github:*/*.json"
   ],
   map: {
-    "ably": "github:ably/ably-js",
+    "ably": "npm:ably@1.0.13",
     "assert": "npm:jspm-nodelibs-assert@0.2.0",
     "bcrypt-pbkdf": "npm:bcrypt-pbkdf@1.0.1",
     "buffer": "npm:jspm-nodelibs-buffer@0.2.1",
@@ -66,7 +66,7 @@ SystemJS.config({
     "zlib": "npm:jspm-nodelibs-zlib@0.2.2"
   },
   packages: {
-    "github:ably/ably-js": {
+    "npm:ably@1.0.13": {
       "map": {
         "request": "npm:request@2.79.0",
         "ws": "npm:ws@1.1.1",
