@@ -3,7 +3,9 @@ SystemJS.config({
     "map": {
       "plugin-typescript-runtime": "npm:babel-runtime@5.8.38",
       "plugin-typescript": "github:frankwallis/plugin-typescript@6.0.5",
-      "core-js": "npm:core-js@1.2.7"
+      "core-js": "npm:core-js@1.2.7",
+      "babel-runtime": "npm:babel-runtime@5.8.38",
+      "babel": "npm:babel-core@5.8.38"
     }
   },
   transpiler: "ts",
