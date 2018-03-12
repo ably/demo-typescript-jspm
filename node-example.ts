@@ -10,4 +10,3 @@ realtime.connection.once('connected', () => {
   console.log('Connected');
   process.exit();
 });
-
