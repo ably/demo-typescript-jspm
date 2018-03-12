@@ -2,7 +2,7 @@
   "jspm": {
     "main": "node-example.ts",
     "dependencies": {
-      "ably": "github:ably/ably-js",
+      "ably": "npm:ably@1.0.13",
       "ts": "github:frankwallis/plugin-typescript@^6.0.5"
     },
     "devDependencies": {
@@ -89,7 +89,7 @@
     }
   },
   "dependencies": {
-    "ably": "git://github.com/ably/ably-js"
+    "ably": "1.0.13"
   },
   "devDependencies": {
     "@types/node": "^7.0.5",
