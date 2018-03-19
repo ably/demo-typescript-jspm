@@ -28,12 +28,12 @@ npm install
 
 Install the JSPM packages:
 ```
-jspm install
+./node_modules/.bin/jspm install
 ```
 
 Install the JSPM loader:
 ```
-jspm dl-loader
+./node_modules/.bin/jspm dl-loader
 ```
 
 Install a static web server:
@@ -43,8 +43,7 @@ npm install http-server -g
 
 Run the web server:
 ```
-http-server 8080
+./node_modules/.bin/http-server -p 8080
 ```
 
 Visit the browser example at [http://localhost:8080](http://localhost:8080)
-

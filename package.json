@@ -2,10 +2,12 @@
   "jspm": {
     "main": "node-example.ts",
     "dependencies": {
-      "ably": "github:ably/ably-js@jspm",
+      "ably": "npm:ably@1.0.13",
       "ts": "github:frankwallis/plugin-typescript@^6.0.5"
     },
     "devDependencies": {
+      "babel": "npm:babel-core@^5.8.24",
+      "babel-runtime": "npm:babel-runtime@^5.8.24",
       "core-js": "npm:core-js@^1.2.0",
       "plugin-typescript": "github:frankwallis/plugin-typescript@^6.0.5",
       "plugin-typescript-runtime": "npm:babel-runtime@^5.8.24"
@@ -43,6 +45,20 @@
       "zlib": "npm:jspm-nodelibs-zlib@^0.2.0"
     },
     "overrides": {
+      "npm:babel-core@5.8.38": {
+        "main": "browser.js",
+        "dependencies": {},
+        "jspmNodeConversion": false,
+        "map": {
+          "regenerator/runtime": "babel-runtime/regenerator/runtime"
+        },
+        "meta": {
+          "browser.js": {
+            "exports": "babel",
+            "format": "global"
+          }
+        }
+      },
       "npm:babel-runtime@5.8.38": {
         "main": false,
         "dependencies": {},
@@ -61,7 +77,8 @@
       },
       "npm:inherits@2.0.3": {
         "ignore": [
-          "test.js"
+          "test.js",
+          "node_modules"
         ]
       },
       "npm:typescript@2.2.0": {
@@ -89,10 +106,11 @@
     }
   },
   "dependencies": {
-    "ably": "git://github.com/ably/ably-js#jspm"
+    "ably": "1.0.13"
   },
   "devDependencies": {
     "@types/node": "^7.0.5",
-    "jspm": "^0.17.0-beta"
+    "jspm": "^0.17.0-beta",
+    "http-server": "^0.11.1"
   }
 }

@@ -3,7 +3,9 @@ SystemJS.config({
     "map": {
       "plugin-typescript-runtime": "npm:babel-runtime@5.8.38",
       "plugin-typescript": "github:frankwallis/plugin-typescript@6.0.5",
-      "core-js": "npm:core-js@1.2.7"
+      "core-js": "npm:core-js@1.2.7",
+      "babel-runtime": "npm:babel-runtime@5.8.38",
+      "babel": "npm:babel-core@5.8.38"
     }
   },
   transpiler: "ts",
@@ -14,7 +16,7 @@ SystemJS.config({
     "tsconfig": true,
     "typings": {
       "ably": "ably.d.ts",
-      "github:ably/ably-js@jspm": "ably.d.ts"
+      "npm:ably@1.0.13": "ably.d.ts"
     }
   },
   packages: {
@@ -32,7 +34,7 @@ SystemJS.config({
     "github:*/*.json"
   ],
   map: {
-    "ably": "github:ably/ably-js@jspm",
+    "ably": "npm:ably@1.0.13",
     "assert": "npm:jspm-nodelibs-assert@0.2.0",
     "bcrypt-pbkdf": "npm:bcrypt-pbkdf@1.0.1",
     "buffer": "npm:jspm-nodelibs-buffer@0.2.1",
@@ -66,7 +68,7 @@ SystemJS.config({
     "zlib": "npm:jspm-nodelibs-zlib@0.2.2"
   },
   packages: {
-    "github:ably/ably-js@jspm": {
+    "npm:ably@1.0.13": {
       "map": {
         "request": "npm:request@2.79.0",
         "ws": "npm:ws@1.1.1",
